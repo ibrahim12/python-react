@@ -88,6 +88,9 @@ def generate_config_for_component(path, translate=None, devtool=None):
             }
         })
 
+    if settings.WEBPACK_CONFIG:
+        config.update(settings.WEBPACK_CONFIG)
+
     if devtool:
         config['devtool'] = devtool
 
