@@ -11,4 +11,7 @@ class Conf(conf.Conf):
 
     JS_HOST_FUNCTION = 'react'
 
+    # webpack config, will be inserted to webpack config
+    WEBPACK_CONFIG = {}
+
 settings = Conf()
